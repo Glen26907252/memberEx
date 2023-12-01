@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <bean id="a" class="CA.A">
+  	<property name="name" value="abc"/>
+  
+  </bean>
+  
+  <bean id="a2" class="CA.A">
+  	<property name="name" value="def"/>
+  
+  </bean>
+  
+  <bean id="a3" class="CA.A">
+  	<property name="name" value="ttt"/>
+  
+  </bean>
+  
+  
+  <bean id="b" class="CB.B"></bean>
+  <bean id="c" class="CC.C"></bean>
+  
+  <bean id="pr1" class="factory.product1">
+  		<property name="a"><!--pr1.setA();  -->
+  				<list><!-- List<A> l=new ArrayList() -->
+  					<!-- <value>aaa</value>限String -->
+  					<bean class="CA.A">
+  						<property name="name" value="qqqq"/>
+  					</bean>
+  					
+  					<!--l.add(new CA.A())  -->
+  					<ref bean="a"/><!-- inject -->
+  					<ref bean="a2"/>
+  					<ref bean="a3"/>
+  					
+  				</list> 		
+  		</property>
+  		
+  		<property name="b">
+  			<list>
+  					<ref bean="b"/>  			
+  			</list>  		
+  		</property>
+  		
+  		<property name="c">
+  			<list>
+  					<ref bean="c"/>  			
+  			</list>  		
+  		</property>
+  
+  </bean>
+
+</beans>

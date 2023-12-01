@@ -1,0 +1,6 @@
+127.0.0.1 - - [15/Nov/2023:19:14:07 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:19:14:08 +0800] "GET /homeworkChetSSM/index.jsp HTTP/1.1" 200 248
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:19:14:08 +0800] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:19:14:24 +0800] "POST /homeworkChetSSM/login HTTP/1.1" 200 381
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:19:14:36 +0800] "GET /homeworkChetSSM/addChat HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:19:14:47 +0800] "POST /homeworkChetSSM/finish HTTP/1.1" 200 422
