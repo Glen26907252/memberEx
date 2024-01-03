@@ -16,3 +16,4 @@ hkjhkjhk<br>
 [KIMO](http://tw.yahoo.com)
 
 [測試網頁](test/index.html)
+![101](pic/1.jpg)
